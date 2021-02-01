@@ -11,9 +11,12 @@ class ArrayList:
         return str_val
     
     def prepend(self, value):
+        size = self.size
         for i in range(array_list.size):
-            array_list[i] = array_list[i+1]
-        array_list[0] = value
+            array_list.arr[size] = array_list.arr[size-1]
+            size -= 1
+        array_list.arr[0] = value
+        array_list.size += 1
         return array_list
 
     def insert(self, value, index):
