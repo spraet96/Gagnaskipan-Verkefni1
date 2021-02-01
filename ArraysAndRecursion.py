@@ -64,3 +64,4 @@ array_list.insert(1,0)
 print(array_list)
 
 
+raise
